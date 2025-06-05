@@ -1,4 +1,4 @@
-# Precall Copilot
+# Pre-call Copilot
 
 ##Overview 💭
 This repository showcases a conversational AI Copilot, developed using Relevance AI, designed to empower sales representatives with cutting-edge pre-call research and report generation capabilities. By harnessing web data, this agent ensures sales reps are exceptionally well-prepared, fostering stronger client relationships and boosting conversion rates.
