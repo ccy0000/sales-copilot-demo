@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Relevance AI Copilot Demo</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Allows content and footer to stack */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures it takes at least full viewport height */
+            margin: 0;
+            background-color: #f4f7f6; /* Light background color */
+            color: #333;
+            padding: 20px; /* Add some padding around content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Max width for content area */
+            width: 100%; /* Ensure it's responsive */
+            flex-grow: 1; /* Allows container to grow and push footer down */
+            display: flex; /* Use flexbox for inner alignment */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Wrapper for the iframe to control its dimensions */
+        .copilot-iframe-wrapper {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 600px; /* Maximum width of the iframe */
+            height: 600px; /* Fixed height for the iframe container */
+            border: 1px solid #e0e0e0; /* Optional: adds a subtle border */
+            border-radius: 8px; /* Optional: rounds the corners */
+            overflow: hidden; /* Ensures content stays within bounds */
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.05); /* Inner shadow for depth */
+            position: relative; /* Needed for iframe absolute positioning if desired */
+        }
+
+        .copilot-iframe-wrapper iframe {
+            position: absolute; /* Positions iframe relative to wrapper */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Basic responsiveness for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .copilot-iframe-wrapper {
+                height: 450px; /* Adjust height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interact with My Relevance AI Copilot!</h1>
+        <p>This is a live demonstration of an AI Copilot designed to assist with [briefly state its purpose, e.g., "customer service inquiries for an e-commerce store"].</p>
+
+        <div class="copilot-iframe-wrapper">
+            <iframe src="https://app.relevanceai.com/agents/bcbe5a/99c1c78d9d66-46fc-9214-04d87a7bc9bd/48dc3a1e-3c29-4d71-9ec6-2937c6dacb44/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23ffd877&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false&hide_description=false" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+
+        <p style="margin-top: 30px;">Feel free to ask questions or provide scenarios!</p>
+    </div>
+
+    <div class="footer">
+        This demo is proudly hosted using GitHub Pages.
+    </div>
+</body>
+</html>
